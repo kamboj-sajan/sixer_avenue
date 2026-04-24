@@ -16,7 +16,7 @@ const TermsAndConditionsPage = () => {
       </div>
       <div className="terms-content">
         <p>
-          Thank you for shopping with CricketWeapon! We appreciate your business
+          Thank you for shopping with SixerAvenue! We appreciate your business
           and your interest in our cricket equipment. We want to make sure you
           have a good experience purchasing from our website.
         </p>
@@ -29,18 +29,18 @@ const TermsAndConditionsPage = () => {
         </p>
         <h2>Acceptance of These Terms</h2>
         <p>
-          You (“Customer”) may place orders for Products with CricketWeapon
+          You (“Customer”) may place orders for Products with SixerAvenue
           ("we," "our") via our website or, in certain circumstances, over the
           phone. By placing an order, you consent to these Terms and Conditions
           of Sale (“Terms”) and acknowledge that we will furnish the Products
           subject to these Terms. Any term or condition in any order or other
           form or correspondence that is inconsistent with these Terms shall be
           inapplicable and of no force and effect whatsoever, unless expressly
-          agreed to in writing by CricketWeapon.
+          agreed to in writing by SixerAvenue.
         </p>
         <h2>Orders</h2>
         <p>
-          All orders are subject to CricketWeapon's acceptance. We may refuse to
+          All orders are subject to SixerAvenue's acceptance. We may refuse to
           accept, cancel, or limit any order or order quantity for any reason,
           even after an order confirmation has been sent. If we cancel an order
           after you have been charged, we will refund you the charged amount.
@@ -60,7 +60,7 @@ const TermsAndConditionsPage = () => {
           CricketWeapon. Prices displayed on the website exclude shipping
           charges, which are calculated and displayed based on the selected
           shipping option during checkout. The prices on the website may differ
-          from those in physical stores that stock CricketWeapon products. We
+          from those in physical stores that stock SixerAvenue products. We
           reserve the right to correct pricing errors and notify you of any
           changes before proceeding with your order.
         </p>
@@ -74,7 +74,7 @@ const TermsAndConditionsPage = () => {
         <p>
           The prices quoted for the Products include Singapore's prevailing
           Goods and Services Tax (GST). Customer is responsible for paying any
-          taxes, except for those based on CricketWeapon's income. If
+          taxes, except for those based on SixerAvvenue's income. If
           CricketWeapon is required to collect and pay taxes on Customer's
           behalf, we may invoice Customer for those amounts.
         </p>
@@ -99,7 +99,7 @@ const TermsAndConditionsPage = () => {
         <h2>Returns</h2>
         <p>
           Once an order has been placed and accepted, you may not cancel the
-          order without CricketWeapon's written consent. You may return products
+          order without SixerAvenue's written consent. You may return products
           for a refund of the purchase price (excluding initial shipping
           charges) plus any applicable tax. Return shipping expenses are the
           customer's responsibility. Products must be returned within thirty
@@ -137,7 +137,7 @@ const TermsAndConditionsPage = () => {
         </p>
         <h2>Entire Agreement</h2>
         <p>
-          These Terms constitute the entire agreement between CricketWeapon and
+          These Terms constitute the entire agreement between SixerAvenue and
           the Customer, superseding all prior or contemporaneous agreements,
           representations, warranties, and understandings.
         </p>
