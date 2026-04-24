@@ -2,9 +2,11 @@ const path = require("path");
 const dotenv = require("dotenv");
 
 // MUST BE FIRST
-dotenv.config({
-  path: path.resolve(__dirname, "config/config.env"),
-});
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config({
+    path: path.resolve(__dirname, "config/config.env"),
+  });
+}
 console.log("ENV FILE LOADED FROM:", path.resolve(__dirname, "config/config.env"));
 console.log("JWT_SECRET:", process.env.JWT_SECRET);
 console.log("DB_LINK:", process.env.DB_LINK);
