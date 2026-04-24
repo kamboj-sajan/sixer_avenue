@@ -208,7 +208,7 @@ const ContactForm = () => {
             }}
             onClick={handleCall}
           >
-            8171280446
+            9876543210
           </strong>
           .
         </Typography>
@@ -228,12 +228,12 @@ const ContactForm = () => {
 
         <Typography variant="body2" className={classes.address_contacts}>
           <span style={{ fontWeight: "500", paddingBottom: "0.5rem" }}>
-            CricketWeapon Store, Pvt Ltd.
+            Sixer Avenue Store, Pvt Ltd.
           </span>
           <br />
-          15130 Sec 22
+          110078 Sec 3
           <br />
-          Noida, UP 201301
+          Dwarka, Delhi
           <br />
           India
         </Typography>
