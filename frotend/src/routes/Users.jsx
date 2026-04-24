@@ -30,6 +30,7 @@ import { useDispatch } from "react-redux";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
+import API_BASE_URL from "../config/apiConfig";
 import { load_UserProfile } from "../actions/userAction"
 function Users() {
    const location = useLocation();
@@ -39,7 +40,7 @@ function Users() {
 
          // get STRIPE_API_KEY for payment from backend for cnnection to stripe payment gateWaY
   async function getStripeApiKey() {
-    const { data } = await axios.get("/api/v1/stripeapikey");
+    const { data } = await axios.get(`${API_BASE_URL}/api/v1/stripeapikey`);
     setStripeApiKey(data.stripeApiKey);
   }
 

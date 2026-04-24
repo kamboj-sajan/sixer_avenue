@@ -1,4 +1,5 @@
 import axios from "axios";
+import API_BASE_URL from "../config/apiConfig";
 import {
   ALL_PRODUCT_REQUEST,
   ALL_PRODUCT_SUCCESS,
@@ -45,11 +46,11 @@ export const getProduct = (
         type: ALL_PRODUCT_REQUEST,
       });
 
-      let link = `/api/v1/product?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
+      let link = `${API_BASE_URL}/api/v1/product?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
 
       // when category selected by user then using another link
       if (category) {
-        link = `/api/v1/product?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}&category=${category}`;
+        link = `${API_BASE_URL}/api/v1/product?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}&category=${category}`;
       }
       const { data } = await axios.get(link);
 
@@ -74,7 +75,7 @@ export const getProductDetails = (id) => {
         type: PRODUCT_DETAILS_REQUEST,
       });
 
-      const { data } = await axios.get(`/api/v1/product/${id}`);
+      const { data } = await axios.get(`${API_BASE_URL}/api/v1/product/${id}`);
 
       dispatch({
         type: PRODUCT_DETAILS_SUCCESS,
@@ -96,7 +97,7 @@ export const newReview = (reviewData) => async (dispatch) => {
 
     const config = { headers: { "Content-Type": "application/json" } };
 
-    const { data } = await axios.put(`/api/v1/review/new`, reviewData, config);
+    const { data } = await axios.put(`${API_BASE_URL}/api/v1/review/new`, reviewData, config);
 
     dispatch({ type: NEW_REVIEW_SUCCESS, payload: data.success });
   } catch (error) {
@@ -109,7 +110,7 @@ export const getAdminProducts = () => async (dispatch) => {
   try {
     dispatch({ type: ADMIN_PRODUCT_REQUEST });
 
-    const { data } = await axios.get("/api/v1/admin/products");
+    const { data } = await axios.get(`${API_BASE_URL}/api/v1/admin/products`);
 
     dispatch({ type: ADMIN_PRODUCT_SUCCESS, payload: data.products });
   } catch (error) {
@@ -130,7 +131,7 @@ export function createProduct(productData) {
       };
 
       const { data } = await axios.post(
-        `/api/v1/admin/product/new`,
+        `${API_BASE_URL}/api/v1/admin/product/new`,
         productData,
         config
       );
@@ -155,7 +156,7 @@ export function deleteProduct(id) {
     try {
       dispatch({ type: DELETE_PRODUCT_REQUEST });
 
-      const { data } = await axios.delete(`/api/v1/admin/product/${id}`);
+      const { data } = await axios.delete(`${API_BASE_URL}/api/v1/admin/product/${id}`);
     
       dispatch({ type: DELETE_PRODUCT_SUCCESS, payload: data.success });
     } catch (error) {
@@ -174,7 +175,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
            };
 
            const { data } = await axios.put(
-             `/api/v1/admin/product/${id}`,
+             `${API_BASE_URL}/api/v1/admin/product/${id}`,
              productData,
              config
            );
@@ -197,7 +198,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
      try {
         dispatch({type : ALL_REVIEW_REQUEST})
 
-        const { data } = await axios.get(`/api/v1/reviews?id=${productId}`);
+        const { data } = await axios.get(`${API_BASE_URL}/api/v1/reviews?id=${productId}`);
         dispatch({type : ALL_REVIEW_SUCCESS , payload : data.reviews})
      } catch (error) {
         dispatch({type : ALL_REVIEW_FAIL , payload : error.message})
@@ -211,7 +212,7 @@ export const deleteProductReview = (reviewId , productId) => async (dispatch) =>
   dispatch({type : DELETE_REVIEW_REQUEST})
 
     const { data } = await axios.delete(
-      `/api/v1/product/reviews/delete?id=${reviewId}&productId=${productId}`
+      `${API_BASE_URL}/api/v1/product/reviews/delete?id=${reviewId}&productId=${productId}`
     );
 
      dispatch({ type: DELETE_REVIEW_SUCCESS, payload: data.success });

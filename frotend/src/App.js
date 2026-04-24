@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { load_UserProfile } from "./actions/userAction";
 import axios from "axios";
+import API_BASE_URL from "./config/apiConfig";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CricketBallLoader from "./component/layouts/loader/Loader";
@@ -62,7 +63,7 @@ function App() {
   // get STRIPE_API_KEY for payment from backend for connection to stripe payment gateway
   async function getStripeApiKey() {
     try {
-      const { data } = await axios.get("/api/v1/stripeapikey");
+      const { data } = await axios.get(`${API_BASE_URL}/api/v1/stripeapikey`);
       if (
         data.stripeApiKey !== undefined &&
         data.stripeApiKey !== null &&

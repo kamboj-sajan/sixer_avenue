@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import MetaData from "../layouts/MataData/MataData";
 import { useAlert } from "react-alert";
 import axios from "axios";
+import API_BASE_URL from "../../config/apiConfig";
 import { useHistory } from "react-router-dom";
 import OrderDetailsSection from "./OrderDetails";
 import DummyCard from "./DummyCard";
@@ -434,7 +435,7 @@ const PaymentComponent = () => {
         },
       };
       const { data } = await axios.post(
-        "/api/v1/payment/process",
+        `${API_BASE_URL}/api/v1/payment/process`,
         paymentData,
         config
       );

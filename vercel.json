@@ -2,15 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/server.js",
-      "use": "@vercel/node"
+      "src": "frotend/build",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/server.js"
-    },
     {
       "src": "/(.*)",
       "dest": "/frotend/build/$1"
