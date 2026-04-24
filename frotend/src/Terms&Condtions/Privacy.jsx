@@ -8,13 +8,13 @@ const PrivacyPolicy = () => {
     <div className="privacy-policy-container">
      <MetaData title={"Privacy Policy"} />
       <div className="container___">
-        <h1>Privacy Policy of CricketWeapon</h1>
+        <h1>Privacy Policy of Sixer Avenue</h1>
         <p style={{ fontSize: "16px", fontWeight: "600" }}>
           {" "}
-          Effective Date: 23-12-2021
+          Effective Date: 15-03-2026
         </p>
         <p>
-          At CricketWeapon, we value the privacy of our customers and are
+          At Sixer Avenue, we value the privacy of our customers and are
           committed to protecting your personal information. This Privacy Policy
           explains how we collect, use, disclose, and safeguard your information
           when you use our website and services. Please read this Privacy Policy
