@@ -122,14 +122,14 @@ const About_UsPage = () => {
                 About Us
               </Typography>
               <Typography variant="body1" className={classes.introText_about}>
-                CricketWeapon store is an online cricket sports selling startup
+                Sixer Avenue store is an online cricket sports selling startup
                 started in 2019. We have served more than 20,000 customers
                 through social media and other platforms. We are proud to offer
                 our own products under the brand name CW, also known as "Cricket
                 Weapon".
               </Typography>
               <Typography variant="body1" className={classes.introText_about}>
-                CricketWeapon was founded by Lokesh Samant, a talented cricket
+                Sixer Avenue was founded by Lokesh Samant, a talented cricket
                 player who has represented the Under 16 and Under 19 teams.
                 Lokesh started this business to support his expenses and
                 received an overwhelming response. He has sold cricket equipment
@@ -150,7 +150,7 @@ const About_UsPage = () => {
             Who We Are
           </Typography>
           <Typography variant="body1" className={classes.infoText_about}>
-            CricketWeapon is dedicated to providing high-quality cricket
+            Sixer Avenue is dedicated to providing high-quality cricket
             equipment and accessories to cricket enthusiasts worldwide. Our
             mission is to empower cricketers with the best tools to enhance
             their performance on the field. With a focus on innovation,
@@ -166,7 +166,7 @@ const About_UsPage = () => {
             ensure that our customers receive top-notch products.
           </Typography>
           <Typography variant="body1" className={classes.infoText_about}>
-            At CricketWeapon, we believe in fostering long-term relationships
+            At Sixer Avenue, we believe in fostering long-term relationships
             with our customers. We provide excellent customer service and strive
             to exceed expectations at every step. We are committed to delivering
             a seamless online shopping experience and ensuring customer
@@ -183,7 +183,7 @@ const About_UsPage = () => {
             Our Mission
           </Typography>
           <Typography variant="body1" className={classes.infoText_about}>
-            CricketWeapon is driven by the mission to provide high-quality
+            Sixer Avenue is driven by the mission to provide high-quality
             cricket equipment and accessories at affordable prices. We aim to
             make cricket accessible to players worldwide and support their
             passion for the sport. Our mission is to offer a wide range of
