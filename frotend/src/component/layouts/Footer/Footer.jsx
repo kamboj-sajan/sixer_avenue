@@ -108,22 +108,22 @@ const footMenu = [
    {
      id: 1,
      icon: <FacebookIcon className="facebook_icon" fontSize="large" />,
-     path: "https://www.instagram.com/iam_nightbot/",
+     path: "https://www.linkedin.com/in/sajan-kamboj-427793289/",
    },
    {
      id: 2,
      icon: <TwitterIcon className="twitter_icon" fontSize="large" />,
-     path: "https://twitter.com/Iam_DEv22",
+     path: "https://www.linkedin.com/in/sajan-kamboj-427793289/",
    },
    {
      id: 3,
      icon: <InstagramIcon className="insta_icon" fontSize="large" />,
-     path: "https://www.instagram.com/cricket_weapon_store17",
+     path: "https://www.linkedin.com/in/sajan-kamboj-427793289/",
    },
    {
      id: 4,
      icon: <LinkedInIcon className="likedin_icon" fontSize="large" />,
-     path: "https://www.linkedin.com/in/iam-devesh/",
+     path: "https://www.linkedin.com/in/sajan-kamboj-427793289/",
    },
  ];
 
@@ -150,9 +150,9 @@ const Footer = () => {
                 <Link to="/" style={{ textDecoration: "none" }}>
                   <img
                     src={require("../../../Image/Footer/logo.png")}
-                    alt="cricekt weapon logo"
+                    alt="sixer avenue logo"
                   />
-                  <h1 className="Foot_heading">Cricket Weapon</h1>
+                  <h1 className="Foot_heading">Sixer Avenue</h1>
                 </Link>
               </div>
 
@@ -265,9 +265,9 @@ const Footer = () => {
 
               <div className="foot_copyright">
                 <p>
-                  &copy; {currYear} | Cricket weapon, All Rights Reserved.
+                  &copy; {currYear} | Sixer Avenue, All Rights Reserved.
                   <span>
-                    <a href="iam-devesh.tech"> | Built by Iam_DEv</a>
+                    <a href="iam-devesh.tech"> | Built by Sajan_Kamboj</a>
                   </span>
                 </p>
               </div>
