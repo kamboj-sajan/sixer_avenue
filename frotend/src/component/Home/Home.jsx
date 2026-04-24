@@ -81,7 +81,7 @@ function Home() {
         <Loader />
       ) : (
         <>
-          <MataData title="Cricket Weapon - Premium Cricket Equipment" />
+          <MataData title="Sixer Avenue - Premium Cricket Equipment" />
           <div className="Home_Page">
             {/* Hero Section */}
             <motion.div 
