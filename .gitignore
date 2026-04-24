@@ -17,7 +17,6 @@ yarn-error.log*
 .env.production.local
 
 # Build directories
-build/
 dist/
 
 # IDE files
